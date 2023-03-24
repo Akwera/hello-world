@@ -3,32 +3,73 @@
 <head>
 <title>Interiors Decoration</title>
 <style>
-body{margin:0;}
-.main1{background-color:orange; width:25%;}
-.main2{background-color:blue; width:75%;}
+html{font-size:100%;}
+body{margin:0;padding:0;}
+*{box-sizing:border-box;}
+.main{margin:0;padding:0;width:100%; position:relative; z-index:1;height:auto;}
+.main div{float:left}
+.main1{background-color:orange; width:25%;  height:1500px;}
+.main2{background-color:blue; width:75%; height:1500px;}
+.mainsecond{position:absolute; z-index:2; background-color:rgb(255 255 255); top:100px; left:70px; bottom:100px; right:100px;}
+imageleft{position:absolute; z-index:4;}
+.nav{position:absolute;  top:20px;}
+
+.nav ul{list-style-type:none; margin:0; padding-left:130px;position:absolute; z-index:5;}
+.nav li{display:inline;}
+a{text-decoration:none;}
+.para{position:absolute; top:130px; left:20px;}
+.para p{font-size:0.5rem; position:absolute;}
+input[type="button"]{background-color:orange;border:none;}
+.bottom{position:absolute; bottom:0; height:100px;}
+.main div::after{
+content="";
+display=table;
+clear=both;}
+.mainsecond div::after{
+content="";
+display=table;
+clear=both;}
 
 </style>
 </head>
 <body>
  <div class="main">
-  <div class="main1"></div>
-  <div class="main2"></div>
+  <div class="main1"><p></p></div>
+  <div class="main2"><p></p></div>
  </div>
- <div>
-  <ul>
-   <li>HOME</li>
-   <li>ABOUT</li>
-   <li>GALLERY</li>
-   <li>CONTACTS</li>
-  </ul>
- </div>
- <div>
-  <h1>WELCOME</h1>
+  <div class="mainsecond">
+  <div class="imageleft"><p></p>
+ 
+  <div class="nav">
+   <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#gallery">GALLERY</a></li>
+    <li><a href="#contacts">CONTACTS</a></li>
+   </ul>
+  </div>
+  <div class="para">
+   <h1><pre>Interior Design 
+For You</pre></h1>
+   <p><pre>The design project allows 
+to develop an interior design and
+see what the final result will be</pre></p>
+ <input type="button" value="EXPLORE"></input>
+ 
+  </div>
+  
+  <div class="bottom" style="float::left;">
+  <div>
+  <h2>WELCOME</h2>
   <p></p>
  </div>
- <div>
-  <h1>SERVICES</h1>
+   <div>
+  <h2>SERVICES</h2>
   <p></p>
+ </div>
+   </div>
+   <img src="decor2.jfif" class="img1" style="padding-left:200px; position:absolute;top:0; right:0;bottom:0; z-index:3;">
+ </div>
  </div>
 </body>
 </html>
